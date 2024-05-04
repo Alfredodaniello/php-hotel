@@ -54,3 +54,26 @@
     ];
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hotels</h1>
+    <ul>
+        <?php foreach($hotels as $hotel) { ?>
+            <li>
+                <div> nome: <?php echo $hotel["name"] ?></div>
+                <div> descrizione: <?php echo $hotel["description"] ?></div>
+                <div> parcheggio: <?php echo $hotel["parking"] ?></div>
+                <div> voto: <?php echo $hotel["vote"] ?></div>
+                <div> distanza dal centro: <?php echo $hotel["distance_to_center"] ?></div>
+            </li>
+        <?php } ?>
+    </ul>
+</body>
+</html>
